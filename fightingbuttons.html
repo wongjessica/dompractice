@@ -8,8 +8,9 @@ Description: Create an HTML page with two buttons that argue with each other. Wh
 
 <p>The onclick event is used to trigger a function when an element is clicked on.</p>
 
-<button onclick="myFunction()">Button #1</button> <br>
-<button onclick="myFunction2()">Button #2</button>
+<button onclick="myFunction()">Button #1</button> <span id = "demo"> </span> <br> <br>
+
+<button onclick="myFunction2()">Button #2</button> 
 
 
 <p id="demo"></p>
@@ -19,6 +20,9 @@ function myFunction() {
   document.getElementById("demo").innerHTML = "I'm Right";
 }
 
+</script>
+
+<script>
 function myFunction2() {
   document.getElementById("demo").innerHTML = "No, I'm Right";
 }
