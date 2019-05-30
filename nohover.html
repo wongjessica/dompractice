@@ -13,6 +13,26 @@ Description: Create an HTML page with a large element on the page that says "Don
 <link rel="stylesheet" type="text/css" href="styles.css">
 
 <html>
+
+<style type="text/css">
+
+#border{ 
+z-index:1;
+position: fixed;
+margin-left:320px;
+margin-top:150px;
+width:  800px;
+height: 200px;
+box-shadow:0px 9px 10px #cdcdcd;
+background:#FAFAFA;
+border: 10px solid #fff;
+} 
+
+</style>
+
+
+
+
 <body>
 
 <h2><i>No Hover</i><br><br>
@@ -23,9 +43,21 @@ Description: Create an HTML page with a large element on the page that says "Don
 <!--I am just restating the assignment for future reference-->
 
 
-<button type="button" onclick="alert('Im right')">Button #1 (Bob)</button>
+<h1 id="demo" onmouseover="mouseOver()">
+	
+	<div id="border">
 
+	<center><font size="6">Don't hover over me</font></center>	
 
+	</div>
+
+</h1>
+
+<script>
+function mouseOver() {
+	alert("Hey, I told you not to hover over me!");
+}
+</script>
 
 </body>
 </html>
