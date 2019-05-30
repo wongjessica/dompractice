@@ -5,8 +5,25 @@
 <h2><i>Fighting Buttons</i><br><br>
 Description: Create an HTML page with two buttons that argue with each other. When one button is clicked, the text "I'm right" should be placed next to it. When the other button is clicked, the text is replaced with, "No, I'm right!"
 </h2>
-<button type="button" onclick="alert('Im right')">Button #1 (Bob)</button>
-<button type="button" onclick="alert('no, im right')">Button #2 (Bill)</button>
+
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<button onclick="myFunction()">Button #1</button> <br>
+<button onclick="myFunction2()">Button #2</button>
+
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I'm Right";
+}
+
+function myFunction2() {
+  document.getElementById("demo").innerHTML = "No, I'm Right";
+}
+</script>
+
 
 
 </body>
