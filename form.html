@@ -31,24 +31,24 @@ Your page should also include an h1 tag. If the information in the form is corre
 
 
 
-<form action="/action_page.php">
+<form onsubmit="pass(event)">
  
   Username:<br>
-  <input type="text" name="username" value="">
+  <input type="text" name="username" value="" id="username">
   <br>
   Email:<br>
-  <input type="text" name="email" value="">
+  <input type="text" name="email" value="" id="email">
   <br>
   Password:<br>
-  <input type="text" name="password" value="">
+  <input type="text" name="password" value="" id="password">
   <br><br>
   <input type="submit" value="Submit">
 </form> 
 
-<h1>Will let you in if the password is 12345678</h1>
+<h1 class = "message" id="message">Hint: Password is 12345678</h1>
 
 
-
+<script src ="authenticate.js"></script>
 
 </body>
 </html>
