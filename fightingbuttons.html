@@ -9,6 +9,9 @@ Description: Create an HTML page with two buttons that argue with each other. Wh
 -->
 
 <!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 <html>
 <body>
 
@@ -16,19 +19,22 @@ Description: Create an HTML page with two buttons that argue with each other. Wh
 Description: Create an HTML page with two buttons that argue with each other. When one button is clicked, the text "I'm right" should be placed next to it. When the other button is clicked, the text is replaced with, "No, I'm right!"
 </h2>
 
-<!-- You will not be able to see this text. -->
+<!--I am just restating the assignment for future reference-->
 
 
 <p>The onclick event is used to trigger a function when an element is clicked on.</p>
 
 <button onclick="myFunction()">Button #1</button> <span id = "demo"> </span> <br> <br>
 
+<!--Makes Button#1 and a span is added to make the text appear next to button-->
+
 <button onclick="myFunction2()">Button #2</button> 
 
+<!--Makes Button#2, myFunction is the effect of pressing the button-->
 
 <p id="demo"></p>
 
-<script>
+<script> 
 function myFunction() {
   document.getElementById("demo").innerHTML = "I'm Right";
 }

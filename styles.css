@@ -1,0 +1,13 @@
+body {
+color: white;
+background-color: #f7f7f7; 
+font-family: times new roman;
+line-height:25px;
+font-size:12px;
+letter-spacing: 2px;
+padding: 0px;
+margin: 0px;
+background-image:url(http://thepatternlibrary.com/img/ao.gif); 
+background-attachment: fixed;
+background-repeat: repeat;
+}
